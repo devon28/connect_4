@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./static/css/styles.css" />
+  </head>
+  <body>
+    <h1>Congradulations {{result}} team you've won!</h1>
+    {%if result == "blue"%}
+    <img
+      src="./static/images/blue_winner.jpeg"
+      alt="blue winner badge"
+      id="blue_winner"
+    />
+    {%endif%} {%if result == "red"%}
+    <img
+      src="./static/images/red_winner.webp"
+      alt="red winner badge"
+      id="red_winner"
+    />
+    {%endif%}
+    <p>We hope you had fun, play again!</p>
+  </body>
+</html>

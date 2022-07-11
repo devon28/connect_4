@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title> Connect Four </title>
+        <link rel="stylesheet" href="./static/css/styles.css">
+    </head>
+	<body>
+        <h1> Play Connect Four </h1>
+		<table id="board">
+            {%for row in grid%}
+            <tr>
+                {%for item in row%}
+                {%if item == "red"%}
+                <td class="red_cell"> <img src="./static/images/red.png" alt="red game piece"  class="red"> </td>
+                {%endif%}
+                {%if item == "blue"%}
+                <td class="blue_cell"> <img src="./static/images/blue.png" alt="blue game piece"  class="blue"> </td>
+                {%endif%}
+                {%if item == "O"%}
+                <td class="empty_spaces">{{item}}</td>
+                {%endif%}
+                {%endfor%}
+            </tr>
+            {%endfor%}
+        </table>
+       
+
+        <div class="choose_column">
+        <form method="POST" action="/row_one" > 
+            <input type="submit" value="Column 1" class="column_chosen"></form>
+
+        <form method="POST" action="/row_two" > 
+            <input type="submit" value="Column 2" class="column_chosen"></form>
+
+        <form method="POST" action="/row_three" > 
+            <input type="submit" value="Column 3" class="column_chosen"></form>
+
+        <form method="POST" action="/row_four" > 
+            <input type="submit" value="Column 4" class="column_chosen"></form>
+
+        <form method="POST" action="/row_five" > 
+            <input type="submit" value="Column 5" class="column_chosen"></form>
+
+        <form method="POST" action="/row_six" > 
+            <input type="submit" value="Column 6" class="column_chosen"></form>
+
+        <form method="POST" action="/row_seven" > 
+            <input type="submit" value="Column 7" class="column_chosen"></form>
+        </div>
+
+        <p> current turn is: {{turn}}</p>
+
+	</body>
+</html>

@@ -1,0 +1,75 @@
+body {
+    align-content: center;
+    text-align: center;
+}
+table {
+    border: 2px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 75vh;
+    width: 50vw;
+}
+.choose_column {
+    display: inline-flex;
+    width: 50vw;
+    border-bottom: 5px solid black;
+
+}
+.column_chosen {
+    padding: 14px;
+    margin: 10px;
+    width: 5.7vw;
+    border-radius: 10px;
+    background-color: lightblue;}
+td {
+    border: 2px slolid black;
+}
+tr {
+    border-bottom: 2px solid black;
+}
+th {
+    border: 2px solid black;
+}
+#board {
+    align-self: center;
+}
+.red {
+    height: 7vh;
+    width: 4vw;
+    padding: 0;
+    margin: 0;
+}
+.red_cell {
+    padding: 17px;
+    margin: 17px;
+    width: 2vw;
+    height: 4vh;
+}
+.blue {
+    height: 7vh;
+    width: 4vw;
+    padding: 0;
+    margin: 0;
+}
+.blue_cell {
+    padding: 17px;
+    margin: 17px;
+    width: 2vw;
+    height: 4vh;
+}
+table, td {
+    border: 10px solid orange;
+    border-collapse: collapse;
+}
+td {
+    border-radius: 40px;
+}
+.empty_spaces {
+    background-color: white;
+    color: white;
+}
+#red_winner, #blue_winner {
+    height: 30vh;
+    width: 20vw;
+}
